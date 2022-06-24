@@ -1,0 +1,19 @@
+syntax = "proto3";
+package calculator_service;
+
+message CalcInput {
+  int64 a = 1;
+  int64 b = 2;
+}
+
+message CalcOutput {
+  int64 result = 1;
+  bool error = 2;
+}
+
+service CalculatorService {
+  rpc Add (CalcInput) returns (CalcOutput);
+  rpc Sub (CalcInput) returns (CalcOutput);
+  rpc Mul (CalcInput) returns (CalcOutput);
+  rpc Div (CalcInput) returns (CalcOutput);
+}
