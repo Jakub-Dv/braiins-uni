@@ -1,0 +1,12 @@
+[package]
+name = "hyper-http-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = { version = "0.14.20", features = ["server", "http1", "tcp"] }
+tokio = { version = "1.20.1", features = ["macros", "rt-multi-thread"] }
+prometheus = "0.13.1"
+lazy_static = "1.4.0"
