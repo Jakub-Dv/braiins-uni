@@ -1,0 +1,11 @@
+First string param:<br>
+{{first}}
+<br><br>
+
+
+Second string param:<br>
+{{second}}
+<br><br>
+
+From markdown:
+{{{body}}}

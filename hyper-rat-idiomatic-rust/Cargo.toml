@@ -1,0 +1,18 @@
+[package]
+name = "hyper-rat"
+version = "0.2.1"
+authors = ["Lukáš Hozda <luk.hozda@gmail.com>"]
+edition = "2015"
+description = "An ultra-simple opinionated static site generator with markdown support"
+license = "Fair"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pulldown-cmark = "0.8.0"
+fs_extra = "1.2.0"
+rayon = "1.5.0"
+regex = "1.4.1"
+toml = "0.5.7"
+ramhorns = "0.10.2"
+die = "0.2.0"
